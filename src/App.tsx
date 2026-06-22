@@ -4,7 +4,7 @@ import furpectlogo from './assets/furpectlogo.svg'
 function App({ children }: any): import("react").JSX.Element {
   return (
     <>
-      <header className="flex gap-4 items-center justify-between mb-4 border-b-1 border-taupe-500 p-2">
+      <header className="bg-gray-50 flex gap-4 items-center justify-between mb-4 border-b-1 border-taupe-500 p-2">
 
         <a href='/' className="pl-5"><img src={furpectlogo} width="128" className="furpect" alt="Furpect logo" /></a>
 
@@ -17,8 +17,8 @@ function App({ children }: any): import("react").JSX.Element {
         </div>
 
         <div className="flex gap-4 items-center pr-5">
-          <a href='/log-in' className="bg-gray-50 hover:bg-taupe-100 text-black py-2 px-4 rounded-sm border-2 border-taupe-700 py-1 px-5">Log In</a>
-          <a href='/sign-up' className="bg-taupe-700 hover:bg-taupe-800 text-white py-2 px-4 rounded-sm border-2 border-taupe-700 py-1 px-5">Sign Up</a>
+          <a href='/log-in' className="bg-gray-50 hover:bg-taupe-100 text-black py-2 px-4 rounded-xl border-2 border-taupe-700 py-1 px-5">Log In</a>
+          <a href='/sign-up' className="bg-taupe-700 hover:bg-taupe-800 text-white py-2 px-4 rounded-xl border-2 border-taupe-700 py-1 px-5">Sign Up</a>
         </div>
 
       </header>

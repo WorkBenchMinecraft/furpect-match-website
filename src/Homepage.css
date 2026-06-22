@@ -12,4 +12,7 @@
 
 body {
   margin: 0;
+  background-image: url("assets/fpmbg.png");
+  background-repeat: no-repeat;
+  background-color: #f1e7dcdf;
 }

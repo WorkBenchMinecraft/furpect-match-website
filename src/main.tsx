@@ -1,9 +1,9 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from "react-router";
-import './index.css'
+import './Homepage.css'
 import App from './App.tsx'
-import Index from './Index.tsx';
+import Homepage from './Homepage.tsx';
 import AboutUs from './AboutUs.tsx';
 import PetGuardian from './PetGuardian';
 import PetProvider from './PetProvider';
@@ -17,7 +17,7 @@ createRoot(document.getElementById('root')!).render(
     <App>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Index />} />
+          <Route path="/" element={<Homepage />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/pet-guardian" element={<PetGuardian />} />
           <Route path="/pet-provider" element={<PetProvider />} />
