@@ -8,8 +8,8 @@ function Homepage() {
     <>
       <title>Homepage</title>
       <div className="flex gap-4 items-center justify-between pl-20 pr-10">
-        <div div className="justify-center flex flex-col w-1/2 pt-5">
-          <div className="flex flex-col text-left w-90 pt-15">
+        <div div className="justify-center flex flex-col w-1/2 p-1">
+          <div className="flex flex-col text-left w-90">
             <div className="flex gap-2 items-center justify-center p-1 bg-taupe-400 border border-taupe-400 rounded-full w-70 text-taupe-800"><img src={useradd} width="20" className="useradd" alt="User Add" /><p className="m-0">For Pet Guardians & Providers</p></div>
             <h1 className="font-bold text-5xl">Connecting Pets with People, </h1>
             <h1 className=" font-bold text-yellow-700 text-5xl">Together.</h1>
@@ -45,7 +45,7 @@ function Homepage() {
         </div>
       </div>
       <div className="flex flex-col gap-4 items-center justify-between pt-3">
-        <div className="flex flex-col items-center justify-center w-300 flex rounded-3xl p-2 pl-6 border-2 border-gray-50 bg-gray-50">
+        <div className="flex flex-col items-center justify-center w-300 flexp-2 pl-6">
           <h2 className="font-bold text-xl">Why Choose Furpect Match?</h2>
           <div className="items-center justify-center w-300 flex gap-10 p-2 px-5">
             <div className="justify-center flex w-90 text-left gap-3">

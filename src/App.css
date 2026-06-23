@@ -6,9 +6,21 @@
   font-style: normal;
 }
 
+.libre-franklin {
+  font-family: "Libre Franklin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 *{
   font-family: "Lilita One";
 }
+
+.navbar{
+  font-family: "" !important;
+}
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;

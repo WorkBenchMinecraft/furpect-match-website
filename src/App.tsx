@@ -4,7 +4,7 @@ import furpectlogo from './assets/furpectlogo.svg'
 function App({ children }: any): import("react").JSX.Element {
   return (
     <>
-      <header className="bg-gray-50 flex gap-4 items-center justify-between mb-4 border-b-1 border-taupe-500 p-2">
+      <header className="navbar bg-gray-50 flex gap-4 items-center justify-between mb-4 border-b-1 border-taupe-500 p-2">
 
         <a href='/' className="pl-5"><img src={furpectlogo} width="128" className="furpect" alt="Furpect logo" /></a>
 
