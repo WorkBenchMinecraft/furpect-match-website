@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Lilita One";
+  src: url('assets/LilitaOne/LilitaOne-Regular.ttf');
+}
+
+@font-face {
+  font-family: "Libre Franklin";
+  src: url('assets/LibreFranklin/LibreFranklin-VariableFont_wght.ttf');
+}
+
+* {
+  font-family: "Libre Franklin";
+}
+
+.navbar *,
+h1,
+h2,
+h3,
+h4,
+h5,
+.btn * {
+  font-family: "Lilita One" !important;
+}
