@@ -13,7 +13,8 @@ import GuardianSignUp3 from "./component/Pet-Guardian/GuardianSignUp3.jsx";
 
 import GuardianBrowsePets from "./component/Pet-Guardian/GuardianBrowsePets.jsx";
 import GuardianMyApplications from "./component/Pet-Guardian/GuardianMyApplications.jsx";
-import GuardianProfile from "./component/Pet-Guardian/GuardianProfile.jsx";
+import GuardianProfilePersonal from "./component/Pet-Guardian/GuardianProfilePersonal.jsx";
+import GuardianProfileSettings from "./component/Pet-Guardian/GuardianProfileSettings.jsx";
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -30,7 +31,8 @@ createRoot(document.getElementById('root')).render(
 
           <Route path="/guardian-browse-pets" element={<GuardianBrowsePets />} />
           <Route path="/guardian-my-applications" element={<GuardianMyApplications />} />
-          <Route path="/guardian-profile" element={<GuardianProfile />} />
+          <Route path="/guardian-profile-personal" element={<GuardianProfilePersonal />} />
+          <Route path="/guardian-profile-settings" element={<GuardianProfileSettings />} />
 
         </Routes>
       </BrowserRouter>

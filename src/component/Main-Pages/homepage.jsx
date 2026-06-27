@@ -1,4 +1,3 @@
-import "./homepage.css";
 import mockup from "/src/assets/images/mockup.png";
 
 function Homepage() {
@@ -6,7 +5,7 @@ function Homepage() {
     return (
         <>
             <title>Homepage</title>
-            <div className="flex gap-4 items-center justify-between pl-20 pr-10 pt-8">
+            <div className="flex gap-4 items-center justify-between pl-20 pr-10 pt-8 bg-[url(/src/assets/images/fpmbg.png)]">
                 <div div className="justify-center flex flex-col w-1/2 p-1">
                     <div className="flex flex-col text-left w-100">
                         <div className="flex gap-2 items-center justify-center p-1 bg-taupe-400 border border-taupe-400 rounded-full w-70 text-taupe-800">

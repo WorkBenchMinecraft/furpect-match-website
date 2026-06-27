@@ -6,31 +6,31 @@ function GuardianBrowsePets() {
             <div className="flex bg-white min-h-screen">
                 <div className="flex flex-col w-60 min-h-screen border-r bg-white border-gray-200 items-stretch pt-10 px-2 gap-4">
                     {/* Nav */}
-                    <a href='/guardian-dashboard' className="btn hover:bg-taupe-700 hover:text-white py-2 px-2 rounded-xl border-2 border-white hover:border-2 hover:border-taupe-700">
+                    <a href='/guardian-dashboard' className="hover:bg-taupe-700 hover:text-white py-2 px-2 rounded-xl border-2 border-white hover:border-2 hover:border-taupe-700">
                         <div className="flex items-center gap-4 px-2 py-1">
                             <span class="fi  fi-br-home text-xl"></span>
                             <span className="leading-none">Dashboard</span>
                         </div>
                     </a>
-                    <a href='/guardian-browse-pets' className="btn hover:bg-taupe-700 hover:text-white py-2 px-2 rounded-xl border-2 border-white hover:border-2 hover:border-taupe-700">
+                    <a href='/guardian-browse-pets' className="hover:bg-taupe-700 hover:text-white py-2 px-2 rounded-xl border-2 border-white hover:border-2 hover:border-taupe-700">
                         <div className="flex items-center gap-4 px-2 py-1">
                             <span class="fi fi-br-magnifying-glass-wave text-xl"></span>
                             <span className="leading-none">Browse Pets</span>
                         </div>
                     </a>
-                    <a href='/guardian-my-applications' className="btn hover:bg-taupe-700 hover:text-white py-2 px-2 rounded-xl border-2 border-white hover:border-2 hover:border-taupe-700">
+                    <a href='/guardian-my-applications' className="hover:bg-taupe-700 hover:text-white py-2 px-2 rounded-xl border-2 border-white hover:border-2 hover:border-taupe-700">
                         <div className="flex items-center gap-4 px-2 py-1">
                             <span class="fi  fi-br-diary-bookmarks text-xl"></span>
                             <span className="leading-none">My Applications</span>
                         </div>
                     </a>
-                    <a href='/guardian-profile' className="btn hover:bg-taupe-700 hover:text-white py-2 px-2 rounded-xl border-2 border-white hover:border-2 hover:border-taupe-700">
+                    <a href='/guardian-profile-personal' className="hover:bg-taupe-700 hover:text-white py-2 px-2 rounded-xl border-2 border-white hover:border-2 hover:border-taupe-700">
                         <div className="flex items-center gap-4 px-2 py-1">
                             <span class="fi fi-br-user text-xl"></span>
                             <span className="leading-none">Profile</span>
                         </div>
                     </a>
-                    <a href='/' className="btn hover:bg-taupe-700 hover:text-white py-2 px-2 rounded-xl border-2 border-white hover:border-2 hover:border-taupe-700">
+                    <a href='/' className="hover:bg-taupe-700 hover:text-white py-2 px-2 rounded-xl border-2 border-white hover:border-2 hover:border-taupe-700">
                         <div className="flex items-center gap-4 px-2 py-1">
                             <span class="fi fi-br-leave text-xl"></span>
                             <span className="leading-none">Log Out</span>
@@ -46,7 +46,7 @@ function GuardianBrowsePets() {
                     <div className="flex px-3 justify-between gap-5">
                         {/* Search */}
                         <input id="search" name="search" type="text" placeholder="Search by the type of Pet, Breed or Keyword..." className="block min-w-0 flex-grow py-1.5 pr-3 pl-1 text-base text-left rounded-xl border-2 border-gray-200"></input>
-                        <a className="btn bg-gray-50 hover:bg-taupe-100 text-yellow-700 py-1 px-2 rounded-xl border-2 border-yellow-700">
+                        <a className="bg-gray-50 hover:bg-taupe-100 text-yellow-700 py-1 px-2 rounded-xl border-2 border-yellow-700">
                             <div className="flex justify-center items-center gap-2 p-1 w-30">
                                 <span class="fi  fi-br-filter text-xl pt-1"></span>
                                 <span className="leading-none">Filter</span>
@@ -55,24 +55,24 @@ function GuardianBrowsePets() {
                     </div>
                     <div className="flex w-full px-2 py-4 gap-3">
                         {/* Filter */}
-                        <a className="btn flex items-center gap-2 bg-gray-50 hover:bg-gray-100 py-1 px-2 rounded-xl border-2 border-gray-200">
-                            <h3>Species</h3>
+                        <a className="flex items-center gap-2 bg-gray-50 hover:bg-gray-100 py-1 px-2 rounded-xl border-2 border-gray-200">
+                            Species
                             <span class="fi fi-br-sort-down text-xl pt-1"></span>
                         </a>
-                        <a className="btn flex items-center gap-2 bg-gray-50 hover:bg-gray-100 py-1 px-2 rounded-xl border-2 border-gray-200">
-                            <h3>Breed</h3>
+                        <a className="flex items-center gap-2 bg-gray-50 hover:bg-gray-100 py-1 px-2 rounded-xl border-2 border-gray-200">
+                            Breed
                             <span class="fi fi-br-sort-down text-xl pt-1"></span>
                         </a>
-                        <a className="btn flex items-center gap-2 bg-gray-50 hover:bg-gray-100 py-1 px-2 rounded-xl border-2 border-gray-200">
-                            <h3>Age</h3>
+                        <a className="flex items-center gap-2 bg-gray-50 hover:bg-gray-100 py-1 px-2 rounded-xl border-2 border-gray-200">
+                            Age
                             <span class="fi fi-br-sort-down text-xl pt-1"></span>
                         </a>
-                        <a className="btn flex items-center gap-2 bg-gray-50 hover:bg-gray-100 py-1 px-2 rounded-xl border-2 border-gray-200">
-                            <h3>Size</h3>
+                        <a className="flex items-center gap-2 bg-gray-50 hover:bg-gray-100 py-1 px-2 rounded-xl border-2 border-gray-200">
+                            Size
                             <span class="fi fi-br-sort-down text-xl pt-1"></span>
                         </a>
-                        <a className="btn flex items-center gap-2 bg-gray-50 hover:bg-gray-100 py-1 px-2 rounded-xl border-2 border-gray-200">
-                            <h3>More Filters</h3>
+                        <a className="flex items-center gap-2 bg-gray-50 hover:bg-gray-100 py-1 px-2 rounded-xl border-2 border-gray-200">
+                            More Filters
                             <span class="fi fi-br-sort-down text-xl pt-1"></span>
                         </a>
                     </div>
@@ -82,8 +82,8 @@ function GuardianBrowsePets() {
                         </div>
                         <div className="flex items-center gap-4">
                             <p>Filter By:</p>
-                            <a className="btn flex items-center gap-2 bg-gray-50 hover:bg-gray-100 py-1 px-2 rounded-xl border-2 border-gray-200">
-                                <h3>Newest</h3>
+                            <a className="flex items-center gap-2 bg-gray-50 hover:bg-gray-100 py-1 px-2 rounded-xl border-2 border-gray-200">
+                                Newest
                                 <span class="fi fi-br-sort-down text-xl pt-1"></span>
                             </a>
                         </div>
