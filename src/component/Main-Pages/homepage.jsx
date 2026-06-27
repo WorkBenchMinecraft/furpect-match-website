@@ -6,23 +6,23 @@ function Homepage() {
     return (
         <>
             <title>Homepage</title>
-            <div className="flex gap-4 items-center justify-between pl-20 pr-10">
+            <div className="flex gap-4 items-center justify-between pl-20 pr-10 pt-8">
                 <div div className="justify-center flex flex-col w-1/2 p-1">
                     <div className="flex flex-col text-left w-100">
                         <div className="flex gap-2 items-center justify-center p-1 bg-taupe-400 border border-taupe-400 rounded-full w-70 text-taupe-800">
                             <span className="fi fi-sr-user-add"></span><p className="m-0">For Pet Guardians & Providers</p>
                         </div>
                         <h1 className="font-bold text-5xl">Connecting Pets with People, </h1>
-                        <h1 className=" font-bold text-yellow-700 text-5xl">Together.</h1>
+                        <h1 className="font-bold text-yellow-700 text-5xl">Together.</h1>
                         <p className="py-3">Furpect is the all-in-one adoption platform that brings adopters and providers together to create happy, lifelong matches.</p>
                         <div className="flex gap-6 justify-center pr-5">
-                            <a href='/pet-guardian' className="btn bg-taupe-700 hover:bg-taupe-800 text-white py-2 px-2 rounded-xl border-2 border-taupe-700">
+                            <a href='/guardian-log-in' className="btn bg-taupe-700 hover:bg-taupe-800 text-white py-2 px-2 rounded-xl border-2 border-taupe-700">
                                 <div className="flex items-center gap-2">
                                     <span className="fi fi-sr-paw"></span>
                                     <span className="leading-none">I Want to Adopt</span>
                                 </div>
                             </a>
-                            <a href='/pet-provider' className="btn bg-gray-50 hover:bg-taupe-100 text-black py-2 px-2 rounded-xl border-2 border-taupe-700">
+                            <a href='/provider-log-in' className="btn bg-gray-50 hover:bg-taupe-100 text-black py-2 px-2 rounded-xl border-2 border-taupe-700">
                                 <div className="flex items-center gap-2">
                                     <span className="fi fi-sr-building"></span>
                                     <span className="leading-none">I'm a Pet Provider</span>
@@ -56,7 +56,7 @@ function Homepage() {
                 </div>
             </div>
             <div className="flex flex-col gap-4 items-center justify-between pt-3">
-                <div className="flex flex-col items-center justify-center w-300 flexp-2 pl-6">
+                <div className="flex flex-col items-center justify-center w-300 p-2 pl-6">
                     <h2 className="font-bold text-xl">Why Choose Furpect Match?</h2>
                     <div className="items-center justify-center w-300 flex gap-10 p-2 px-5">
                         <div className="justify-center items-center flex w-90 text-left gap-3">

@@ -26,6 +26,10 @@
   font-family: "Libre Franklin";
 }
 
+body {
+  background-color: #f1e7dcdf;
+}
+
 .navbar *,
 h1,
 h2,

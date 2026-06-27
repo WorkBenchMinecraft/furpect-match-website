@@ -4,7 +4,7 @@ import furpectlogo from '/src/assets/icons/furpectlogo.svg'
 function App({ children }) {
   return (
     <>
-      <header className="navbar bg-gray-50 flex gap-4 items-center justify-between mb-4 border-b-1 border-taupe-500 p-2">
+      <header className="navbar bg-gray-50 flex gap-4 items-center justify-between border-b-1 border-gray-200 p-2">
 
         <a href='/' className="pl-5"><img src={furpectlogo} width="128" className="furpect" alt="Furpect logo" /></a>
 
@@ -17,7 +17,7 @@ function App({ children }) {
         </div>
 
         <div className="flex gap-4 items-center pr-5">
-          <a href='/log-in' className="bg-gray-50 hover:bg-taupe-100 text-black py-2 px-4 rounded-xl border-2 border-taupe-700 py-1 px-5">Log In</a>
+          <a href='/guardian-log-in' className="bg-gray-50 hover:bg-taupe-100 text-black py-2 px-4 rounded-xl border-2 border-taupe-700 py-1 px-5">Log In</a>
           <a href='/sign-up' className="bg-taupe-700 hover:bg-taupe-800 text-white py-2 px-4 rounded-xl border-2 border-taupe-700 py-1 px-5">Sign Up</a>
         </div>
 
@@ -27,7 +27,7 @@ function App({ children }) {
         {children}
       </main>
 
-      <footer>(c) 2026 PawMatch</footer>
+      <footer className="bg-gray-50 flex gap-4 items-center justify-center border-t-1 border-gray-200 p-2">(c) 2026 PawMatch</footer>
     </>
   )
 }
