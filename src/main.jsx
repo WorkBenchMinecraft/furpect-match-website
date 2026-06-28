@@ -7,6 +7,7 @@ import SignUp from "./component/Main-Pages/SignUp.jsx";
 import GuardianLogIn from "./component/Pet-Guardian/GuardianLogIn.jsx";
 import App from "./App";
 
+import GuardianSignUp from "./component/Pet-Guardian/GuardianSignUp.jsx";
 import GuardianSignUp1 from "./component/Pet-Guardian/GuardianSignUp1.jsx";
 import GuardianSignUp2 from "./component/Pet-Guardian/GuardianSignUp2.jsx";
 import GuardianSignUp3 from "./component/Pet-Guardian/GuardianSignUp3.jsx";
@@ -25,6 +26,7 @@ createRoot(document.getElementById('root')).render(
           <Route path="/sign-up" element={<SignUp />} />
           <Route path="/guardian-log-in" element={<GuardianLogIn />} />
 
+          <Route path="/guardian-sign-up" element={<GuardianSignUp />} />
           <Route path="/guardian-sign-up-1" element={<GuardianSignUp1 />} />
           <Route path="/guardian-sign-up-2" element={<GuardianSignUp2 />} />
           <Route path="/guardian-sign-up-3" element={<GuardianSignUp3 />} />
