@@ -43,8 +43,8 @@ const Step1 = () => {
                             <input id="confirmpassword" name="confirmpassword" type="text" placeholder="********" className="block min-w-0 grow py-1.5 pr-3 pl-1 text-base rounded-xl border-2 border-taupe-700"></input>
                         </div>
                     </div>
-                    <button className="btn bg-taupe-700 hover:bg-taupe-800 text-white py-2 px-2 rounded-xl border-2 border-taupe-700">
-                        <span onClick={() => nextStep()} className="leading-none">Continue</span>
+                    <button onClick={() => nextStep()} className="btn bg-taupe-700 hover:bg-taupe-800 text-white py-2 px-2 rounded-xl border-2 border-taupe-700">
+                        <span className="leading-none">Continue</span>
                     </button>
                     <div className="p-2">
                         <span>Already have an account? </span>
@@ -83,6 +83,14 @@ const Step1 = () => {
 const Step2 = () => {
     const { previousStep, nextStep } = useWizard();
 
+    const showStep3Toast = () => {
+        toast(<Step3 />, {
+            closeButton: false,
+            autoClose: false,
+            position: 'top-center',
+            toastId: "step-3"
+        });
+    };
 
     return (
         <>
@@ -127,7 +135,7 @@ const Step2 = () => {
                             </div>
                         </div>
                     </div>
-                    <button onClick={toast(<Step3/>)} className="btn bg-taupe-700 hover:bg-taupe-800 text-white py-2 px-2 rounded-xl border-2 border-taupe-700">
+                    <button onClick={() => showStep3Toast()} className="btn bg-taupe-700 hover:bg-taupe-800 text-white py-2 px-2 rounded-xl border-2 border-taupe-700">
                         <span className="leading-none">Continue</span>
                     </button>
                 </div>
@@ -143,33 +151,25 @@ const Step2 = () => {
             </div>
             <ToastContainer />
         </>
-
     )
 }
 
-const Step3 = () => {
-
+const Step3 = ({ toastProps }) => {
     return (
-        <>
-            <div className="flex flex-col gap-4 items-center justify-between pt-10 bg-white min-h-screen">
-                <div className="flex flex-col gap-1 p-5 rounded-xl items-center justify-between w-100 bg-white border-2 border-gray-200">
-                    <img src={success} width="300" className="" alt="Mock Up" />
-                    <div className="w-full pb-8">
-                        <div className="pt-2">
-                            <h2 className="font-bold text-2xl">Registration Complete!</h2>
-                            <p>Welcome to Furpect Match!<br />You can log in to continue.</p>
-                        </div>
-                    </div>
-                    <div className="flex flex-col gap-1 items-stretch p-2 w-full">
-                        <a href='/guardian-log-in' className="btn bg-taupe-700 hover:bg-taupe-800 text-white py-2 px-2 rounded-xl border-2 border-taupe-700">
-                            <div className="flex justify-center items-center gap-4">
-                                <span className="leading-none">Go to Log In</span>
-                            </div>
-                        </a>
-                    </div>
+        <div className="flex flex-col gap-1 p-5 rounded-xl items-center justify-between">
+            <img src={success} width="250" className="" alt="Mock Up" />
+            <div className="w-full pb-8">
+                <div className="pt-2">
+                    <h2 className="font-bold text-2xl">Registration Complete!</h2>
+                    <p>Welcome to Furpect Match!<br />You can log in to continue.</p>
                 </div>
             </div>
-        </>
+            <div className="flex flex-col gap-1 items-stretch p-2 w-full">
+                <a href='/guardian-log-in' className="btn bg-taupe-700 hover:bg-taupe-800 text-white py-2 px-2 rounded-xl border-2 border-taupe-700">
+                    <span className="leading-none">Go to Log In</span>
+                </a>
+            </div>
+        </div>
     )
 }
 

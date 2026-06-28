@@ -8,10 +8,8 @@ import GuardianLogIn from "./component/Pet-Guardian/GuardianLogIn.jsx";
 import App from "./App";
 
 import GuardianSignUp from "./component/Pet-Guardian/GuardianSignUp.jsx";
-import GuardianSignUp1 from "./component/Pet-Guardian/GuardianSignUp1.jsx";
-import GuardianSignUp2 from "./component/Pet-Guardian/GuardianSignUp2.jsx";
-import GuardianSignUp3 from "./component/Pet-Guardian/GuardianSignUp3.jsx";
 
+import GuardianDashboard from "./component/Pet-Guardian/GuardianDashboard.jsx";
 import GuardianBrowsePets from "./component/Pet-Guardian/GuardianBrowsePets.jsx";
 import GuardianMyApplications from "./component/Pet-Guardian/GuardianMyApplications.jsx";
 import GuardianProfilePersonal from "./component/Pet-Guardian/GuardianProfilePersonal.jsx";
@@ -27,10 +25,8 @@ createRoot(document.getElementById('root')).render(
           <Route path="/guardian-log-in" element={<GuardianLogIn />} />
 
           <Route path="/guardian-sign-up" element={<GuardianSignUp />} />
-          <Route path="/guardian-sign-up-1" element={<GuardianSignUp1 />} />
-          <Route path="/guardian-sign-up-2" element={<GuardianSignUp2 />} />
-          <Route path="/guardian-sign-up-3" element={<GuardianSignUp3 />} />
 
+          <Route path="/guardian-dashboard" element={<GuardianDashboard/>} />
           <Route path="/guardian-browse-pets" element={<GuardianBrowsePets />} />
           <Route path="/guardian-my-applications" element={<GuardianMyApplications />} />
           <Route path="/guardian-profile-personal" element={<GuardianProfilePersonal />} />

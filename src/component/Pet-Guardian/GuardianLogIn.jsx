@@ -23,7 +23,7 @@ function GuardianLogIn() {
                         </div>
                         <div className="flex items-center justify-between py-4">
                             <div className="gap-2">
-                                <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 border border-default-medium rounded-xs bg-neutral-secondary-medium focus:ring-2 focus:ring-brand-soft"></input>
+                                <input id="default-checkbox" type="checkbox" value="" className="w-4 h-4 border border-default-medium rounded-xs bg-neutral-secondary-medium focus:ring-2 focus:ring-brand-soft"></input>
                                 <label> Remember Me</label>
                             </div>
                             <a href='/forgot-password' className="font-bold text-yellow-700">Forgot Password?</a>

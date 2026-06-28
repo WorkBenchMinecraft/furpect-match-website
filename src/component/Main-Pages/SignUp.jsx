@@ -16,16 +16,16 @@ function SignUp() {
                         </div>
                     </div>
                     <img src={dogcat} width="300" className="" alt="Mock Up" />
-                    <div className="flex flex-col gap-1 items-stretch p-2">
-                        <a href='/guardian-sign-up-1' className="btn bg-taupe-700 hover:bg-taupe-800 text-white py-2 px-2 rounded-xl border-2 border-taupe-700">
+                    <div className="flex flex-col gap-3 items-stretch pt-6 pb-1">
+                        <a href='/guardian-sign-up' className="btn bg-taupe-700 hover:bg-taupe-800 text-white py-2 px-3 rounded-xl border-2 border-taupe-700">
                             <div className="flex items-center gap-4">
-                                <span class="fi fi-sr-paw"></span>
+                                <span className="fi fi-sr-paw"></span>
                                 <span className="leading-none">I Want to Register as a Guardian</span>
                             </div>
                         </a>
-                        <a href='/provider-sign-up-1' className="btn bg-gray-50 hover:bg-taupe-100 text-black py-2 px-2 rounded-xl border-2 border-taupe-700">
+                        <a href='/provider-sign-up' className="btn bg-gray-50 hover:bg-taupe-100 text-black py-2 px-3 rounded-xl border-2 border-taupe-700">
                             <div className="flex items-center gap-4">
-                                <span class="fi fi-sr-building"></span>
+                                <span className="fi fi-sr-building"></span>
                                 <span className="leading-none">I want to Register as a Provider</span>
                             </div>
                         </a>
